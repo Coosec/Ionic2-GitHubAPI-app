@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar>
+    <button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>organizations</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <ion-list>
+    <button ion-item *ngFor="let organization of organizations">
+      <ion-avatar item-left>
+        <img [src]="organization.avatar_url">
+      </ion-avatar>
+      <h2>{{ organization.login }}</h2>
+    </button>
+  </ion-list>
+</ion-content>

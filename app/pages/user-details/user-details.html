@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar>
+    <button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>{{login}} Details</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <h2>User Details view page</h2>
+  <ion-list>
+    <ion-item>
+      <ion-label>Name</ion-label>
+      <ion-badge item-right>{{user.name}}</ion-badge>
+    </ion-item>
+    <ion-item>
+      <ion-label>E-mail</ion-label>
+      <ion-badge item-right>{{user.email}}</ion-badge>
+    </ion-item>
+    <ion-item>
+      <ion-label>Followers</ion-label>
+      <ion-badge item-right>{{user.followers}}</ion-badge>
+    </ion-item>
+    <ion-item>
+      <ion-label>Following</ion-label>
+      <ion-badge item-right>{{user.following}}</ion-badge>
+    </ion-item>
+    <ion-item>
+      <ion-label>Repositories</ion-label>
+      <ion-badge item-right>{{user.public_repos}}</ion-badge>
+    </ion-item>
+  </ion-list>
+</ion-content>

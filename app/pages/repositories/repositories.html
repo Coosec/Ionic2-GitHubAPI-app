@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar>
+    <button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>repositories</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <ion-list>
+    <button ion-item *ngFor="let repo of repositories">
+      <h2>Name: {{ repo.name }}</h2>
+      <h3>Owner: {{ repo.owner.login }}</h3>
+    </button>
+  </ion-list>
+</ion-content>
